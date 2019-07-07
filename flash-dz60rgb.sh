@@ -1,0 +1,1 @@
+rm -rf .build/* ; make dztech/dz60rgb:nico:dfu-util

@@ -1,5 +1,6 @@
 #pragma once
 
+<<<<<<< HEAD
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
@@ -40,3 +41,9 @@
 #define DRIVER_1_LED_TOTAL 63
 #endif
 #define DRIVER_LED_TOTAL DRIVER_1_LED_TOTAL
+=======
+
+#undef RGB_DISABLE_AFTER_TIMEOUT
+#define RGB_DISABLE_AFTER_TIMEOUT 60 // number of ticks to wait until disabling effects
+#define TAP_HOLD_CAPS_DELAY 100
+>>>>>>> a4beaac87fdca366f5bcf0d7b1e9da458afd1889

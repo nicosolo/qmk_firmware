@@ -6,35 +6,55 @@
 #define _LAYER4 4
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		[_LAYER0] = LAYOUT( /* Base */
+<<<<<<< HEAD
 			KC_GESC,            KC_1,     KC_2,     KC_3,  KC_4,  KC_5,  KC_6,  KC_7,  KC_8,    KC_9,    KC_0,            KC_MINS,  KC_EQL,  KC_BSPC,\
 		    KC_TAB,             KC_Q,     KC_W,     KC_E,  KC_R,  KC_T,  KC_Y,  KC_U,  KC_I,    KC_O,    KC_P,            KC_LBRC,  KC_RBRC, KC_BSLASH,\
 			LALT_T(KC_CAPS),     KC_A,     KC_S,     KC_D,  KC_F,  KC_G,  KC_H,  KC_J,  KC_K,    KC_L,    KC_SCLN,         KC_QUOT,           KC_ENT, \
+=======
+			GRAVE_ESC,            KC_1,     KC_2,     KC_3,  KC_4,  KC_5,  KC_6,  KC_7,  KC_8,    KC_9,    KC_0,            KC_MINS,  KC_EQL,  KC_BSPC,\
+		    KC_TAB,             KC_Q,     KC_W,     KC_E,  KC_R,  KC_T,  KC_Y,  KC_U,  KC_I,    KC_O,    KC_P,            KC_LBRC,  KC_RBRC, KC_BSLASH,\
+			LT(_LAYER1, KC_CAPS),     KC_A,     KC_S,     KC_D,  KC_F,  KC_G,  KC_H,  KC_J,  KC_K,    KC_L,    KC_SCLN,         KC_QUOT,           KC_ENT, \
+>>>>>>> a4beaac87fdca366f5bcf0d7b1e9da458afd1889
 		    KC_LSFT,            KC_Z,     KC_X,     KC_C,  KC_V,  KC_B,  KC_N,  KC_M,  KC_COMM, KC_DOT,  RSFT_T(KC_SLSH), KC_UP,            LT(_LAYER2, KC_DEL),\
 		    KC_LCTL,            KC_LGUI,  KC_LALT,        KC_SPC,               KC_RALT, MO(_LAYER1),  KC_LEFT,         KC_DOWN,           KC_RIGHT),
 		[_LAYER1] = LAYOUT( /* FN */
 		    KC_GRAVE,    KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   KC_DEL ,\
+<<<<<<< HEAD
 		    RGB_TOG,  TO(2), TO(3),  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_CALC,  KC_TRNS,  KC_PSCR,  KC_SLCK,  KC_PAUS, KC_VOLD,   KC_VOLU,    KC_MUTE  ,\
+=======
+		    RGB_TOG,  TO(2), TO(3),  AG_SWAP,  AG_NORM,  KC_TRNS,  KC_CALC,  KC_TRNS,  KC_PSCR,  KC_SLCK,  KC_PAUS, KC_VOLD,   KC_VOLU,    KC_MUTE  ,\
+>>>>>>> a4beaac87fdca366f5bcf0d7b1e9da458afd1889
 		    RGB_TOG,  RGB_HUI,  RGB_SAI,  RGB_SPI, RGB_VAI, RGB_RMOD,  KC_TRNS,  KC_TRNS,  KC_HOME,  KC_PGUP, KC_MPRV, KC_MNXT, KC_MEDIA_PLAY_PAUSE   ,\
 		    RGB_M_P, RGB_HUD,  RGB_SAD,  RGB_SPD,  RGB_VAD,  RGB_MOD,  KC_TRNS,  KC_TRNS,  KC_END, KC_PGDOWN , KC_TRNS  ,KC_TRNS,            RESET,\
 		  	KC_TRNS,  KC_TRNS,  KC_TRNS,                      TO(2),                        KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,            KC_TRNS),
 		[_LAYER2] = LAYOUT( /* LIGHT */
         KC_GRAVE,    KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   KC_DEL ,\
+<<<<<<< HEAD
         RGB_TOG,  TO(2), TO(3),  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_CALC,  KC_TRNS,  KC_PSCR,  KC_SLCK,  KC_PAUS, KC_VOLD,   KC_VOLU,    KC_MUTE  ,\
         RGB_TOG,  RGB_HUI,  RGB_SAI,  RGB_SPI, RGB_VAI, RGB_RMOD,  KC_TRNS,  KC_TRNS,  KC_HOME,  KC_PGUP, KC_MPRV, KC_MNXT, KC_MEDIA_PLAY_PAUSE   ,\
         RGB_M_P, RGB_HUD,  RGB_SAD,  RGB_SPD,  RGB_VAD,  RGB_MOD,  KC_TRNS,  KC_TRNS,  KC_END, KC_PGDOWN , KC_TRNS  ,KC_TRNS,            RESET,\
         KC_TRNS,  KC_TRNS,  KC_TRNS,                      TO(2),                        KC_TRNS,  TO(0),  KC_TRNS,  KC_TRNS,            KC_TRNS),
+=======
+		    RGB_TOG,  TO(2), TO(3),  AG_SWAP,  AG_NORM,  KC_TRNS,  KC_CALC,  KC_TRNS,  KC_PSCR,  KC_SLCK,  KC_PAUS, KC_VOLD,   KC_VOLU,    KC_MUTE  ,\
+		    RGB_TOG,  RGB_HUI,  RGB_SAI,  RGB_SPI, RGB_VAI, RGB_RMOD,  KC_TRNS,  KC_TRNS,  KC_HOME,  KC_PGUP, KC_MPRV, KC_MNXT, KC_MEDIA_PLAY_PAUSE   ,\
+		    RGB_M_P, RGB_HUD,  RGB_SAD,  RGB_SPD,  RGB_VAD,  RGB_MOD,  KC_TRNS,  KC_TRNS,  KC_END, KC_PGDOWN , KC_TRNS  ,KC_TRNS,            RESET,\
+		  	KC_TRNS,  KC_TRNS,  KC_TRNS,                      TO(2),                        KC_TRNS,  TO(0),  KC_TRNS,  KC_TRNS,            KC_TRNS),
+>>>>>>> a4beaac87fdca366f5bcf0d7b1e9da458afd1889
 		[_LAYER3] = LAYOUT( /* NUMPAD */
 			KC_NLCK,  KC_PSLS,  KC_PAST,  KC_PMNS,  KC_PPLS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_PSLS,  KC_PAST,  KC_PMNS,  KC_PPLS,  KC_TRNS,\
 			KC_TRNS,  KC_P7,    KC_P8,    KC_P9,    KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_P7,    KC_P8,    KC_P9,    KC_TRNS,  KC_TRNS,  TO(0),\
 			KC_TRNS,  KC_P4,    KC_P5,    KC_P6,    KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_P4,    KC_P5,    KC_P6,    KC_TRNS,            KC_PENT,\
 			KC_TRNS,  KC_P1,    KC_P2,    KC_P3,    KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_P1,    KC_P2,    KC_P3,    KC_TRNS,            KC_TRNS,\
 			KC_TRNS,  KC_P0,    KC_PDOT,                      KC_PENT,                      KC_P0,    TO(0),  KC_TRNS,  KC_TRNS,            KC_TRNS),
+<<<<<<< HEAD
 		[_LAYER4] = LAYOUT( /* SWITCH LALT AND LGUI */
 			KC_GESC,        KC_1,     KC_2,     KC_3,  KC_4,  KC_5,  KC_6,    KC_7,  KC_8,    KC_9,     KC_0,            KC_MINS,  KC_EQL,  KC_BSPC,\
 		    KC_TAB,         KC_Q,     KC_W,     KC_E,  KC_R,  KC_T,  KC_Y,    KC_U,  KC_I,    KC_O,     KC_P,            KC_LBRC,  KC_RBRC, KC_BSLASH,\
 			CTL_T(KC_CAPS), KC_A,     KC_S,     KC_D,  KC_F,  KC_G,  KC_H,    KC_J,  KC_K,    KC_L,     KC_SCLN,         KC_QUOT,           KC_ENT, \
 		    KC_LSFT,        KC_Z,     KC_X,     KC_C,  KC_V,  KC_B,  KC_N,    KC_M,  KC_COMM, KC_DOT,   RSFT_T(KC_SLSH), KC_UP,             LT(2, KC_DEL),\
 			KC_LCTL,        KC_LALT,  KC_LGUI,                KC_SPC,                KC_RALT, TO(0),    KC_LEFT,         KC_DOWN,           KC_RIGHT),
+=======
+>>>>>>> a4beaac87fdca366f5bcf0d7b1e9da458afd1889
 		};
 
 void rgb_matrix_indicators_user(void) {
@@ -133,6 +153,11 @@ void rgb_matrix_indicators_user(void) {
               rgb_matrix_set_color(i, 0x00, 0x00, 0xFF);
           }
 
+<<<<<<< HEAD
+=======
+          rgb_matrix_set_color(23, 0x77, 0x88, 0x33);
+          rgb_matrix_set_color(24, 0x77, 0x88, 0x33);
+>>>>>>> a4beaac87fdca366f5bcf0d7b1e9da458afd1889
 
           rgb_matrix_set_color(25, 0x00, 0xFF, 0x00);
           rgb_matrix_set_color(26, 0x00, 0xFF, 0x00);
@@ -147,6 +172,10 @@ void rgb_matrix_indicators_user(void) {
           rgb_matrix_set_color(31, 0x00, 0x00, 0xFF);
           rgb_matrix_set_color(32, 0x00, 0x00, 0xFF);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a4beaac87fdca366f5bcf0d7b1e9da458afd1889
           for (i=35; i<=40; i++)
           {
               rgb_matrix_set_color(i, 0x00, 0xFF, 0xFF);
